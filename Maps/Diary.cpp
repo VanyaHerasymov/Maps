@@ -37,27 +37,25 @@ void Diary::findByDate(Date D)
 
 			}cout << endl;
 		}
-		else {
-			cout << "there are no events with this Date";
-		}
-	}
+		
+	}			cout << "there are no events with this Date";
+
 }
 
 void Diary::finByEvent(string info)
 {
-	/*for (auto item : book) {
-		
-		if(item.book)
-		
-		{
-			cout << item.first << endl;
-			for (int i = 0; i < item.second.size(); i++) {
-				cout << "\t" << item.second[i] << endl;
+	bool isfound = false;
+	for (auto node : book) {
+		for (auto item : node.second) {
+			if (item == info) {
+				cout << node.first << " ";
+				isfound = true;
+				break;
+			}
 
-			}cout << endl;
 		}
-		else {
-			cout << "there are no events with this name";
-		}
-	}*/
+		
+	}
+	if (!isfound)cout << "Not found!\n";
+
 }

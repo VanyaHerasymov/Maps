@@ -44,7 +44,7 @@ int main()
 
     Ivan.addEvent(Date(2025, 1, 9), "New study year");
     Ivan.showInfo();
-
+    Ivan.findByDate(Date(2025, 1, 9));
     
 
 }
