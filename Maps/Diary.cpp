@@ -21,6 +21,10 @@ void Diary::showInfo() const
 
 void Diary::addEvent(Date D, string info)
 {
+
+
+	book[D].push_back(info);
+	
 }
 
 void Diary::findByDate(Date D)

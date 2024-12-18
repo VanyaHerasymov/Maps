@@ -5,6 +5,7 @@
 #include <map>
 #include <string>
 #include "Date.h"
+#include "Diary.h"
 using namespace std;
 
 int main()
@@ -39,9 +40,12 @@ int main()
 
 
     }*/
+    Diary Ivan;
 
+    Ivan.addEvent(Date(2025, 1, 9), "New study year");
+    Ivan.showInfo();
 
-
+    
 
 }
 
